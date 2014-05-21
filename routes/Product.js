@@ -25,6 +25,7 @@ function fetchCatalog(req,res){
 	});
 }
 
+
 function categorySearch(req,res){
 	
 
