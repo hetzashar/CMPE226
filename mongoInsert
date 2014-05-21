@@ -1,0 +1,99 @@
+test1={
+	   item_name:"Samsung Note 3",
+	   item_description:"CPU: 1.9 GHz Cortex-A15 & quad-core 1.3 GHz Cortex-A7 (3G model)",
+	   brand:"Samsung",
+	   category:"Devices",
+	   units:30,
+	   price:544
+	}
+
+test2={
+   "item_name":"Panda Washing Machine",
+   "item_description":"Panda Small Compact Portable Washing Machine(6-7lbs Capacity) with Spin Dryer",
+   "brand":"Panda",
+   "category":"Appliances",
+   "units":50,
+   "price":249
+}
+
+test3={
+   "item_name":"LG Television",
+   "item_description":"LG Electronics 32LN530B 32-Inch 720p 60Hz LED TV",
+   "brand":"LG",
+   "category":"Appliances",
+   "units":30,
+   "price":350,
+   "dimensions":"29.1inches x 17.2inches x 3.1inches"
+   
+}
+
+test4={
+   "item_name":"Samsung Note 3",
+   "item_description":"CPU: 1.9 GHz Cortex-A15 & quad-core 1.3 GHz Cortex-A7 (3G model)",
+   "brand":"Samsung",
+   "category":"Devices",
+   "units":30,
+   "memory":"32GB",
+   "price":544
+}
+
+test5={
+   "item_name":"SPT Refrigerator",
+   "item_description":"3.2 cu.ft. Double Door Refrigerator in Stainless Steel",
+   "brand":"SPT Energy Star",
+   "category":"Appliances",
+   "units":30,
+   "price":350
+}
+
+test6={
+   "item_name":"CND Vinylux Nail Paint",
+   "item_description":"CND Vinylux - Open Road Collection - Desert Poppy #163",
+   "brand":"CND Cosmetics",
+   "category":"Cosmetics",
+   "color":"Desert Poppy",
+   "units":30,
+   "price":5
+}
+
+test7={
+   "item_name":"NYX Matte Lipstick",
+   "item_description":"Highly pigmented, richly formulated lipstick envelop lips in brilliant color",
+   "brand":"NYX",
+   "category":"Cosmetics",
+   "color":"Shocking Pink",
+   "units":30,
+   "price":350
+}
+
+test8={
+	   "item_name":"Lakme Foundation",
+	   "item_description":"Offers perfect blending and full coverage for a flawless invisible finish",
+	   "brand":"Lakme",
+	   "category":"Cosmetics",
+	   "skinfamily":"Light",
+	   "skintone":"Pink",
+	   "shadeNo":"01",
+	   "units":200,
+	   "price":10
+	}
+
+test9={
+	   "item_name":"Revlon One-Step Makeup",
+	   "item_description":"Revlon New Complexion One-Step Makeup, SPF 15, Medium Beige 05, 0.35 Ounce",
+	   "brand":"Revlon",
+	   "category":"Cosmetics",
+	   "units":2,
+	   "price":15
+	}
+db.productcatalogs.insert(test1);
+db.productcatalogs.insert(test2);
+db.productcatalogs.insert(test3);
+db.productcatalogs.insert(test4);
+db.productcatalogs.insert(test5);
+db.productcatalogs.insert(test6);
+db.productcatalogs.insert(test7);
+db.productcatalogs.insert(test8);
+db.productcatalogs.insert(test9);
+
+db.productcatalogs.update({item_name:"CND Vinylux Nail Paint"},{$set:{color:"Desert Poppy"}})

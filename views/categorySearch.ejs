@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Product Catalog</title>
+
+<link href="/stylesheets/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="templatemo_background_section_top">
+    
+    	<div class="templatemo_container">
+		
+        	<div id="templatemo_header">
+				<div id="templatemo_logo_section">            
+		        	<h1>Product Catalog</h1>            
+					<h2>Variety of products</h2>
+				</div>
+                <div id="templatemo_search_box">
+	                <form action="/search" method="post">
+    	            	<input name="search" type="text" id="textfield"/>
+        	            <input type="submit" name="Search" value="" alt="Search" id="button" title="Search" />
+					</form>
+                </div>
+         	</div><!-- end of headder -->
+                
+    		<div id="templatemo_menu_panel">
+            
+    			<div id="templatemo_menu_section">
+                
+            		<ul>
+		                <li><a href="/">All Products</a></li>
+		                <li><a href="/categorySearch">Categorywise Filter</a></li>
+		                                  
+		            </ul> 
+                    
+				</div>
+                
+		    </div> <!-- end of menu -->
+            
+		</div><!-- end of container-->
+        
+	</div><!-- end of templatemo_background_section_top-->
+    
+    <div id="templatemo_background_section_middle">
+    
+    	<div class="templatemo_container">
+        
+        	
+                
+                	<div class="templatemo_post_top">
+                    	<h1>Product List</h1>
+                    </div>
+                    
+                    <div class="templatemo_post_mid" style="height:500px;">
+                    <article id="content">
+                    <div class="wrapper">	   
+                    <div class="wrapper">	                        
+				       <form action="/search" method="post" onsubmit="return validateSearch(this);">
+						  <table>
+							<tbody>
+								<tr>
+									<td><label for="search" style="font-size:20px;">Category:</label></td>
+									<td><select id="search" name="search" style="background-color:#EEEEEE;color:#777777;width:180px;height:30px;font-size:20px;">
+										  <option value="Cosmetics">Cosmetics</option>
+										  <option value="Devices">Devices</option>
+										  <option value="Appliances">Appliances</option>
+									</select></td>
+								</tr>
+								<tr><td/></tr>
+								<tr><td></td> </tr></tbody>
+							</table>
+							<br/>
+							<input name="submit" type="submit" value="Search" style="margin-left:150px;background-color:blue;color:#FFFFFF; font-size:20px;width:100px; height:30px;"/>
+						</form>      	
+                    <div class="clear"></div>
+                    </div></div>
+                    </article>
+                    </div>
+                    
+                    
+			            
+            
+        </div><!-- end of container-->
+	</div><!-- end of background middle-->
+  </div>
+     
+</html>

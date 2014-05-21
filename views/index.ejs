@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Product Catalog</title>
+
+<link href="/stylesheets/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+	<div id="templatemo_background_section_top">
+    
+    	<div class="templatemo_container">
+		
+        	<div id="templatemo_header">
+				<div id="templatemo_logo_section">            
+		        	<h1>Product Catalog</h1>            
+					<h2>Variety of products</h2>
+				</div>
+                <div id="templatemo_search_box">
+	                <form action="/search" method="post">
+    	            	<input name="search" type="text" id="textfield"/>
+        	            <input type="submit" name="Search" value="" alt="Search" id="button" title="Search" />
+					</form>
+                </div>
+         	</div><!-- end of headder -->
+                
+    		<div id="templatemo_menu_panel">
+            
+    			<div id="templatemo_menu_section">
+                
+            		<ul>
+		                <li><a href="/">All Products</a></li>
+		                <li><a href="/categorySearch">Categorywise Filter</a></li>
+		                                  
+		            </ul> 
+                    
+				</div>
+                
+		    </div> <!-- end of menu -->
+            
+		</div><!-- end of container-->
+        
+	</div><!-- end of templatemo_background_section_top-->
+    
+    <div id="templatemo_background_section_middle">
+    
+    	<div class="templatemo_container">
+        
+        	
+                
+                	<div class="templatemo_post_top">
+                    	<h1>Product List</h1>
+                    </div>
+                    
+                    <div class="templatemo_post_mid">
+                    <article id="content">
+                    <div class="wrapper">	   
+                    <div class="wrapper">	                        
+				             	<% 
+									if(productCatalog != null && productCatalog.length > 0) {
+			  							var j=2;
+				                    	for(var i=0;i<productCatalog.length;i++) {
+					             %>
+					             <% if (i==j){ 
+					             	j=i+3;%>
+					             <div class="cols">
+					             <% }else{ %>
+					            <div class="cols marg_right1"><%}%> 
+					              <figure class="pad_bot1">
+						              	<div id="gridClass">
+						              		<br/>
+						              		<% if (productCatalog[i].item_name!=undefined){%>
+						              			<p style="font-size:20px;font-style:italic"><%= productCatalog[i].item_name%></p>
+						              		<%}
+						              		if(productCatalog[i].item_description!=undefined){%>
+						              			<p style="font-size:10px;">Item Description: <%= productCatalog[i].item_description%></p>
+						              		<%}
+						              		if(productCatalog[i].brand!=undefined){%>
+						              			<p style="font-size:10px;">Brand: <%= productCatalog[i].brand%></p>
+						              		<%}
+						              		if(productCatalog[i].category!=undefined){%>
+						              			<p style="font-size:10px;">Category: <%= productCatalog[i].category%></p>
+						              		<%}
+						              		if(productCatalog[i].memory!=undefined){%>
+						              			<p style="font-size:10px;">Memory: <%= productCatalog[i].memory%></p>
+						              		<%}
+						              		if(productCatalog[i].color!=undefined){%>
+						              			<p style="font-size:10px;">Color: <%= productCatalog[i].color%></p>
+						              		<%}
+						              		if(productCatalog[i].skinfamily!=undefined){%>
+						              			<p style="font-size:10px;">Skin-Family: <%= productCatalog[i].skinfamily%></p>
+						              		<%}
+						              		if(productCatalog[i].skintone!=undefined){%>
+						              			<p style="font-size:10px;">Skin-Tone: <%= productCatalog[i].skintone%></p>
+						              		<%}
+						              		if(productCatalog[i].shadeNo!=undefined){%>
+						              			<p style="font-size:10px;">Shade No: <%= productCatalog[i].shadeNo%></p>
+						              		<%}
+						              		if(productCatalog[i].dimensions!=undefined){%>
+						              			<p style="font-size:10px;">Dimensions: <%= productCatalog[i].dimensions%></p>
+						              		<%}
+						              		if(productCatalog[i].units!=undefined){%>
+						              			<p style="font-size:10px;">Available Units: <%= productCatalog[i].units%></p>
+						              		<%}
+						              		if(productCatalog[i].price!=undefined){%>
+						              			<p style="font-size:20px;">Price: $<%= productCatalog[i].price%></p>
+						              		<%}%>
+						              		
+						              	</div>
+					              </figure>
+					            </div>
+					            <% }} else {%>
+									<p> No Records found for the product Catalog Home... </p>
+									<%}%>
+                        <div class="clear"></div>
+                        </div></div>
+                        </article>
+                    </div>
+                    
+                    
+			            
+            
+        </div><!-- end of container-->
+	</div><!-- end of background middle-->
+  </div>
+     
+</html>
