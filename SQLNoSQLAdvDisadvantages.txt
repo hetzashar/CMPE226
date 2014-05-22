@@ -1,0 +1,67 @@
+Name: Hetal Ashar
+ID: 009413248
+
+Advantages of SQL:
+1. Portable: SQL is run in programs in mainframes, PCs, laptops, servers and even mobile phones. It runs in local systems, intranet and internet. 
+Databases using SQL can be moved from device to another without any problems.
+2. Used with any DBMS system with any vendor: SQL is used by a all the vendors who develop DBMS.
+3. SQL Standard: First standard for SQL was put up in 1986 by ANSI (American National Standards Institute) and ISO (International Standards Organization). 
+It was later expanded in 1989 and in 1992 and 1999.
+4. Used for relational databases: SQL is widely used for relational databases.
+5. Easy to learn and understand: SQL mainly consists of English statements and it is very easy to learn and understand a SQL query.
+6. Interactive language: SQL can be used to communicate with the databases and get answers to complex questions in seconds.
+
+Disadvantages of SQL
+
+1. Joins in relational databases can slow the system down to a crawl, especially when millions of users are doing lookups against tables with millions of 
+rows of data. Google and Amazon found this to be the case, and thus developed their own non-relational systems.
+2. Relational data doesn’t map well to typical programming structures that often consist of complex data types or hierarchical data. Data such as XML is 
+especially difficult because of its hierarchical nature. Complex objects that contain objects and lists inside of them do not always map directly to a 
+single row in a single table.
+3. Relational data doesn’t map well. Combine that with the need to handle the syntax of SQL, and writing client code for accessing SQL databases becomes 
+difficult.
+
+Advantages of NoSQL:
+When compared to relational databases, NoSQL databases are more scalable and provide superior performance, and their data model addresses several issues
+that the relational model is not designed to address:
+
+1. Large volumes of structured, semi-structured, and unstructured data
+2. Agile sprints, quick iteration, and frequent code pushes
+3. Object-oriented programming that is easy to use and flexible
+4. Efficient, scale-out architecture instead of expensive, monolithic architecture
+5. Dynamic Schemas: Relational databases require that schemas be defined before you can add data. For example, you might want to store data about your customers
+ such as phone numbers, first and last name, address, city and state – a SQL database needs to know what you are storing in advance.
+
+This fits poorly with agile development approaches, because each time you complete new features, the schema of your database often needs to change. 
+So if you decide, a few iterations into development, that you'd like to store customers' favorite items in addition to their addresses and phone numbers, 
+you'll need to add that column to the database, and then migrate the entire database to the new schema.
+
+If the database is large, this is a very slow process that involves significant downtime. If you are frequently changing the data your application stores – 
+because you are iterating rapidly – this downtime may also be frequent. There's also no way, using a relational database, to effectively address data that's 
+completely unstructured or unknown in advance.
+
+NoSQL databases are built to allow the insertion of data without a predefined schema. That makes it easy to make significant application changes in real-time, 
+without worrying about service interruptions – which means development is faster, code integration is more reliable, and less database administrator time is 
+needed.
+
+Auto-sharding
+6. Auto Sharding: NoSQL databases,usually support auto-sharding, meaning that they natively and automatically spread data across an arbitrary number of servers, 
+without requiring the application to even be aware of the composition of the server pool. Data and query load are automatically balanced across servers, and 
+when a server goes down, it can be quickly and transparently replaced with no application disruption.
+7. Replication: Most NoSQL databases support automatic replication, meaning that you get high availability and disaster recovery without involving 
+separate applications to manage these tasks. The storage environment is essentially virtualized from the developer's perspective.
+8. Integrated Caching: A number of products provide a caching tier for SQL database systems. These systems can improve read performance substantially, 
+but they do not improve write performance, and they add complexity to system deployments. If your application is dominated by reads then a distributed cache 
+should probably be considered, but if your application is dominated by writes or if you have a relatively even mix of reads and writes, then a distributed 
+cache may not improve the overall experience of your end users.Many NoSQL database technologies have excellent integrated caching capabilities, 
+keeping frequently-used data in system memory as much as possible and removing the need for a separate caching layer that must be maintained.
+
+Disadvantages of NoSQL:
+
+1. No relations between the tables(collections in mongodb).
+2. No Stored Procedures in mongodb (NoSql database).
+3. Most of the administration is depends upon scripting like bash,perl e.t.c., in linux environment
+4. GUI mode tools to access the database is not flexibly available in market.
+5. There is no database developer for nosql. Front end application developer can take care of the  
+    database creation.
+6. Backups is the drawback in nosql(considering mongodb) like incremental,differential etc
